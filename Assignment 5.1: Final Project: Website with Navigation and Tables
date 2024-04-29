@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Boards</title>
+</head>
+<body>
+    <header>
+        <h1>Welcome to Prince's Work</h1>
+    </header>
+    <nav>
+        <h2>Other work</h2>
+        <!-- links to other pages-->
+        <a href="./index.html">Home</a><br>
+        <a href="./boards.html">Boards</a><br>
+         <a href="syntax.html">Syntax</a><br>
+         <a href="string.html">string</a><br>
+         <a href="strings.html">strings</a><br>
+         <a href="game.html">game</a><br>
+         <a href="test.html">number game practice</a><br>
+    </nav>
+    <main>
+        <h2>Objectives/Boards Page</h2>
+    
+    </main>
+    <footer>
+        <p>Your Name<br>
+        University of Advancing Technology<br>
+        2625 W Baseline Rd<br>
+        Tempe, AZ 85283<br></p>
+    </footer>
+</body>
+</html>
+
+    <!-- Prince John 4/28/2024 -->
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <!-- Comp Sci is my major not sure what I was supposed to make the tittle -->
+    
+        <title>Comp Sci</title>
+    </head>
+    <body>
+            <!-- Title is the same as the objectives page  -->
+        <header> <h1>ADVANCING COMPUTER SCIENCE DEGREE OBJECTIVES </h1> </header>
+        <nav>
+            <h2>Navigation</h2>
+            <a href="./boards.html">Boards</a><br>
+             <a href="syntax.html">Syntax</a><br>
+             <a href="string.html">string</a><br>
+             <a href="strings.html">strings</a><br>
+             <a href="game.html">game</a><br>
+             <a href="test.html">number game practice</a><br>
+        </nav>
+
+        <!-- Now this is the objectives I was gonna just make the paragraphs but i thought this looked neater -->
+        <li>Follow a software development process to analyze a problem and to design, build and test software solutions.</li>
+        
+        <li> Demonstrate software development skills using more than one programming language and development environment. </li>
+        
+        <li>Implement data-driven solutions.</li>
+            <!-- Spaced them out because my eyes were straining and its not that many lines of code anyways -->
+        <li>Design and implement software solutions for mobile devices, embedded systems and/or multiple platforms.</li>
+        
+        <li>Document the planning and development of software applications using industry standard tools, techniques and processes.</li>
+        
+        <li>Within software solutions, describe, implement and analyze data structure techniques such as lists, trees, hash tables and graphs, along with sorting and searching algorithms.</li>
+    
+    </body>
+    <footer> Prince John <br>
+    
+    University of Advancing Technology <br>
+    2625 W Baseline Rd <br>
+    Tempe, AZ 85283 <br>
+</footer>
+    
+    </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designers vs Programmers</title>
+</head>
+<body>
+   <header>
+       <h1>Designers vs Programmers</h1>
+   </header>
+   <nav>
+       <h2>Other work</h2>
+       <a href="./index.html">Home</a><br>
+        <a href="syntax.html">Syntax</a><br>
+        <a href="string.html">string</a><br>
+        <a href="strings.html">strings</a><br>
+        <a href="game.html">game</a><br>
+        <a href="test.html">number game practice</a><br>
+   </nav>
+   <img src="Screenshot 2024-04-28 195455.png">
+   <footer>
+       <p>Prince John<br>
+       University of Advancing Technology<br>
+       2625 W Baseline Rd<br>
+       Tempe, AZ 85283<br></p>
+   </footer>
+</body>
+</html>
+<!-- Prince John -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Secret Message</title>
+</head>
+<body>
+    <h1>Secret Message </h1>
+    
+    <div class="container">
+        <!-- Text box inputs for first and last names -->
+        <input type="text" id="firstName" placeholder="Enter your first name">
+        <input type="text" id="lastName" placeholder="Enter your last name">
+        <!-- Text box input for zip code -->
+        <input type="text" id="zipCode" placeholder="Enter your zip code">
+        <button onclick="checkInputs()">Check Inputs</button>
+        <div id="result" class="result"></div>
+        <!-- adding the sound -->
+        <audio id="theaudio" src="us-lab-background.mp3"> </audio>
+
+         <!-- Button to activate the sound effect -->
+    <button onclick="playSound()">Play Sound</button>
+    </div>
+
+    <script language="javascript" type="text/javascript">
+  // Function to check if inputs are valid
+  function checkInputs() {
+            var firstName = document.getElementById("firstName").value.trim(); // Get first name input
+            var lastName = document.getElementById("lastName").value.trim(); // Get last name input
+            var fullName = firstName + " " + lastName; // Combine first and last names
+            var zipCode = document.getElementById("zipCode").value.trim(); // Get zip code
+       
+            // Check if full name has more than 20 characters
+            if (fullName.length > 20) {
+                document.getElementById("result").textContent = "Full name must be 20 characters or less.";
+                return; // Exit function
+            }
+
+            // Check if zip code hAS contains 5 digits
+            if (!/^\d{5}$/.test(zipCode)) {
+                document.getElementById("result").textContent = "Zip code must contain 5 digits.";
+                return; // Exit function
+            }
+
+            // displays the secret message and image if the zip and name are right
+            document.getElementById("result").textContent = "Congratulations! You've unlocked the secret message.";
+            document.getElementById("result").innerHTML += '<img src="4wayssecretmessages_header1140.avif" alt="Secret Message Image">';
+        } 
+         // Function to play the sound effect
+         function playSound() {
+            var audio = document.getElementById("theaudio");
+            audio.play();
+         }
+    </script>
+</body>
+<nav>
+    <h2>Other work</h2>
+    <!-- links to other pages-->
+    <a href="./index.html">Home</a><br>
+    <a href="./boards.html">Boards</a><br>
+     <a href="syntax.html">Syntax</a><br>
+     <a href="string.html">string</a><br>
+     <a href="game.html">game</a><br>
+     <a href="test.html">number game practice</a><br>
+</nav>
+<footer>
+    <p>Prince John<br>
+    University of Advancing Technology<br>
+    2625 W Baseline Rd<br>
+    Tempe, AZ 85283<br></p>
+</footer>
+</html>
+
+<!-- Prince John-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice roll</title>
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+    <div class="die-container"> 
+    </div>
+    <!-- to create a button -->
+    <button type="button" class="btnrd">Roll Dice</button>
+</body>
+<nav>
+    <h2>Other work</h2>
+    <!-- links to other pages-->
+    <a href="./index.html">Home</a><br>
+    <a href="./boards.html">Boards</a><br>
+     <a href="syntax.html">Syntax</a><br>
+     <a href="string.html">string</a><br>
+     <a href="strings.html">strings</a><br>
+     <a href="test.html">number game practice</a><br>
+</nav>
+<footer>
+    <p>Prince John<br>
+    University of Advancing Technology<br>
+    2625 W Baseline Rd<br>
+    Tempe, AZ 85283<br></p>
+</footer>
+</html>
+
+<!-- Prince John -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="string.css">
+    <title>Palindrome Checker</title>
+</head>
+<body>
+    <h1>Palindrome Checker</h1>
+    <div class="container">
+        <button onclick="checkPalindrome()">Check Palindrome</button>
+        <div id="result" class="result"></div>
+    </div>
+
+    <script language="javascript" type="text/javascript">
+        // Function to check if a string is a palindrome
+        function yesPalindrome(str) {
+            // Remove spaces and convert to lowercase (so its case insensitive meaning that spaces and lowercases/uppercases wont affect the checker)
+            var strippedStr = str.replace(/\s/g, '').toLowerCase();
+            // This is how we check if reversed string equals original string
+            return strippedStr === strippedStr.split('').reverse().join('');
+        }
+
+        // Function to check palindromes and prompt user for input
+        function checkPalindrome() {
+            var userInput;
+            do {
+                userInput = prompt("Enter a string (or 'exit' to quit):");
+                if (userInput !== null) { // Check if user cancels
+                    if (userInput.toLowerCase() !== "exit") { // Check if user wants to exit
+                        // Check if input is a palindrome
+                        var palindrome = yesPalindrome(userInput);
+                        // Display result to user (userinput is the message they tried to check) 
+                        if (palindrome) {
+                            alert("'" + userInput + "' is a palindrome.");
+                        } else {
+                            alert("'" + userInput + "' is not a palindrome.");
+                        }
+                    }
+                }
+                // a do while loop that continues unless the user cancels the prompt or types exit.
+            } while (userInput !== null && userInput.toLowerCase() !== "exit");
+        }
+    </script>
+</body>
+<nav>
+    <h2>Other work</h2>
+    <!-- links to other pages-->
+    <a href="./index.html">Home</a><br>
+    <a href="./boards.html">Boards</a><br>
+     <a href="syntax.html">Syntax</a><br>
+     <a href="string.html">string</a><br>
+     <a href="game.html">game</a><br>
+     <a href="test.html">number game practice</a><br>
+</nav>
+<footer>
+    <p>Prince John<br>
+    University of Advancing Technology<br>
+    2625 W Baseline Rd<br>
+    Tempe, AZ 85283<br></p>
+</footer>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<script src="syntax.js"> </script>
+
+</head>
+<body>
+    
+<body>
+    <h1 style="text-align: center"> REGISTRATION FORM </h1>          
+    <form name="RegForm" action="/submit.php" onsubmit="return GEEKFORGEEKS()" method="post"> 
+          
+        <p>Name: <input type="text" size=65 name="Name"> </p><br>       
+        <p> Address: <input type="text" size=65 name="Address">  </p><br>
+        <p>E-mail Address: <input type="text" size=65 name="EMail">  </p><br>
+         <p>Password: <input type="text" size=65 name="Password"> </p><br>
+        <p>Telephone: <input type="text" size=65 name="Telephone"> </p><br>  
+               
+        <p>SELECT YOUR COURSE   
+            <select type="text" value="" name="Subject">
+                <option>BTECH</option>
+                <option>BBA</option>
+                <option>BCA</option>
+                <option>B.COM</option>
+                <option>GEEKFORGEEKS</option>
+            </select></p><br><br>
+        <p>Comments:  <textarea cols="55" name="Comment">  </textarea></p>
+        <p><input type="submit" value="send" name="Submit">     
+            <input type="reset" value="Reset" name="Reset">  
+        </p>         
+    </form>
+</body>
+<nav>
+    <h2>Other work</h2>
+    <!-- links to other pages-->
+    <a href="./index.html">Home</a><br>
+    <a href="./boards.html">Boards</a><br>
+     <a href="string.html">string</a><br>
+     <a href="strings.html">strings</a><br>
+     <a href="game.html">game</a><br>
+     <a href="test.html">number game practice</a><br>
+</nav>
+<footer>
+    <p>Prince John<br>
+    University of Advancing Technology<br>
+    2625 W Baseline Rd<br>
+    Tempe, AZ 85283<br></p>
+</footer>
+</html>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="resultParas">
+        <p class="guesses"></p>
+        <p class="lastResult"></p>
+        <p class="lowOrHi"></p>
+      </div>
+      
+      <label for="guessField">Put number here: </label>
+      <input type="number" id="guessField" class="guessField" />
+      <input type="submit" value="Submit guess" class="guessSubmit" />
+      
+    <script src="test.js"></script>
+</body>
+<nav>
+    <h2>Other work</h2>
+    <!-- links to other pages-->
+    <a href="./index.html">Home</a><br>
+    <a href="./boards.html">Boards</a><br>
+     <a href="syntax.html">Syntax</a><br>
+     <a href="string.html">string</a><br>
+     <a href="strings.html">strings</a><br>
+     <a href="game.html">game</a><br>
+</nav>
+<footer>
+    <p>Prince John<br>
+    University of Advancing Technology<br>
+    2625 W Baseline Rd<br>
+    Tempe, AZ 85283<br></p>
+</footer>
+</html>
